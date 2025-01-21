@@ -1,4 +1,8 @@
 
 {
+<<<<<<< HEAD
     "liveServer.settings.port": 5500
+=======
+    "liveServer.settings.port": 5501
+>>>>>>> 62c8ca7 (Your commit message describing the changes)
 }

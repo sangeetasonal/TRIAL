@@ -16,6 +16,10 @@
 .bg-black{
     background-color: black;
     color: white;
+<<<<<<< HEAD
+=======
+    min-height: 100vh;
+>>>>>>> 62c8ca7 (Your commit message describing the changes)
 }
 
 .invert{

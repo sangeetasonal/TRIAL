@@ -17,12 +17,35 @@
 body{
     background-color: rgb(24, 10, 10); 
      color: white; 
+<<<<<<< HEAD
 }
 
 .left {
     width: 25vw;
     padding: 10px 10px 0px 10px;
     margin: 0 0 10px 0;
+=======
+     background-color: rgb(24, 10, 10); 
+     color: white; 
+     width: 100vw; /* Full viewport width */
+     /* overflow: hidden;  */
+     display: flex;
+     flex-direction: column;
+}
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.left {
+    width: 25%; /* Adjust width */
+    padding: 10px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+>>>>>>> 62c8ca7 (Your commit message describing the changes)
 }
 
 .cross{
@@ -46,12 +69,19 @@ display:none;
 }
 
 .right {
+<<<<<<< HEAD
     width: 75vw;
+=======
+    width: 100vw;
+>>>>>>> 62c8ca7 (Your commit message describing the changes)
 }
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 62c8ca7 (Your commit message describing the changes)
 .nav{
     
     padding: 10px 0px 10px 19px;
@@ -82,8 +112,17 @@ display:none;
 }
 
 .library {
+<<<<<<< HEAD
     min-height: 73vh;
     position: relative;
+=======
+    min-height: 70vh;
+    flex-grow: 1; /* Take remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Start at the top */
+    padding-bottom: 60px; /* Make space for footer */
+>>>>>>> 62c8ca7 (Your commit message describing the changes)
 }
 
 .footer {
@@ -91,14 +130,26 @@ display:none;
     font-size: 9px;
     color: grey;
     gap: 13px;
+<<<<<<< HEAD
     position: absolute;
     bottom: 0;
 
+=======
+    position: fixed;
+    bottom: 15px;
+    left: 20px;
+>>>>>>> 62c8ca7 (Your commit message describing the changes)
     margin: 10px -17px;
     padding: 0 24px;
     text-align: start;
     display: flex;
     flex-wrap: wrap;
+<<<<<<< HEAD
+=======
+
+    text-align: center;
+    width: 25%;
+>>>>>>> 62c8ca7 (Your commit message describing the changes)
 }
 
 .footer a {
@@ -252,13 +303,23 @@ display:none;
       
 .playbar{
     position: fixed;
+<<<<<<< HEAD
     bottom: 10px;
+=======
+    bottom: 15px;
+>>>>>>> 62c8ca7 (Your commit message describing the changes)
     background-color: rgb(1, 70, 82);
 
     padding: 10px;
     border-radius: 15px;
+<<<<<<< HEAD
     width: 70vw;
     min-height: 30px;
+=======
+    width: -webkit-fill-available;
+    margin-right: 12px; 
+       min-height: 30px;
+>>>>>>> 62c8ca7 (Your commit message describing the changes)
 }
 .songbuttons{
     display: flex;
@@ -266,7 +327,10 @@ display:none;
     gap: 16px;
 }
 .songlist{
+<<<<<<< HEAD
     height: 370px;
+=======
+>>>>>>> 62c8ca7 (Your commit message describing the changes)
     overflow: auto;
     margin-bottom: 44px ;
 }
