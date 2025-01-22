@@ -128,8 +128,7 @@ async function main(){
 
    
 
-    // //get the list of all the songs
-    songs = await getSongs("songs/calming");
+   
 
   
          
