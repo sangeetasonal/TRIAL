@@ -71,7 +71,8 @@ const playMusic = (track, pause = false) => {
 }
 
 async function displayAlbums(){
-    let a = await fetch(`/songs/`)
+    let a = await fetch(`./songs/`); // Relative path
+
      let response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response;
@@ -85,7 +86,7 @@ async function displayAlbums(){
             let folder = e.href.split("/").slice(-1)[0]
 
            //get the metadata of the folder
-           let a = await fetch(`${window.location.origin}/songs/${folder}/info.json`);
+           let a = await fetch(`./songs/${folder}/info.json`); // Relative path
 
            let response = await a.json();
            console.log(response)
@@ -112,7 +113,8 @@ async function displayAlbums(){
 Array.from(document.getElementsByClassName("card")).forEach(e => { 
     e.addEventListener("click", async item => {
         console.log("Fetching Songs")
-        songs = await getSongs(`songs/${item.currentTarget.dataset.folder}`)  
+        songs = await getSongs(`songs/${item.currentTarget.dataset.folder}`); // Relative path
+
         playMusic(songs[0])
 
     })
