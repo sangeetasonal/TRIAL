@@ -58,8 +58,7 @@ for (let index =0; index < as.length; index++){
 }
 
 const playMusic = (track, pause = false) => {
-    currentSong.src = `songs/${currFolder}/` + track;
-
+    currentSong.src = `/${currFolder}/` + track
     if (!pause) {
         currentSong.play()
         play.src = "img/pause.svg"
@@ -71,8 +70,7 @@ const playMusic = (track, pause = false) => {
 }
 
 async function displayAlbums(){
-    let a = await fetch(`songs/`); // Relative path
-
+    let a = await fetch(`/songs/`)
      let response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response;
@@ -82,12 +80,11 @@ async function displayAlbums(){
         for (let index = 0; index < array.length; index++) {
             const e = array[index]; 
     
-     if(e.href.includes("songs/") && !e.href.includes(".htaccess")){
+     if(e.href.includes("/songs/") && !e.href.includes(".htaccess")){
             let folder = e.href.split("/").slice(-1)[0]
 
            //get the metadata of the folder
-           let a = await fetch(`songs/${folder}/info.json`);
-
+           let a = await fetch(`/songs/${folder}/info.json`)
            let response = await a.json();
            console.log(response)
            cardContainer.innerHTML = cardContainer.innerHTML + `<div data-folder="${folder}" class="card">
@@ -100,7 +97,7 @@ async function displayAlbums(){
 
 
            </div> 
-            <img src="songs/${folder}/cover.jpg" alt="">
+            <img src="/songs/${folder}/cover.jpg" alt="">
             <h2>${response.title}</h2>
             <p>${response.description}</p>
           
@@ -113,8 +110,7 @@ async function displayAlbums(){
 Array.from(document.getElementsByClassName("card")).forEach(e => { 
     e.addEventListener("click", async item => {
         console.log("Fetching Songs")
-        songs = await getSongs(`songs/${item.currentTarget.dataset.folder}`); // Relative path
-
+        songs = await getSongs(`songs/${item.currentTarget.dataset.folder}`)  
         playMusic(songs[0])
 
     })
@@ -128,8 +124,9 @@ async function main(){
 
    
 
-   
-
+    // //get the list of all the songs
+     songs = await getSongs("songs/calming")
+     playMusic(songs[0], true)
   
          
  //display all the album on the page  

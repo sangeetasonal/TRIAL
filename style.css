@@ -110,15 +110,15 @@ display:none;
     gap: 13px;
     position: fixed;
     bottom: 15px;
-    left: 20px;
-    margin: 10px -17px;
+    left: 58px;
+    margin: 10px -50px;
     padding: 0 24px;
     text-align: start;
     display: flex;
     flex-wrap: wrap;
 
     text-align: center;
-    width: 25%;
+    width: 20%;
 }
 
 .footer a {
@@ -452,7 +452,9 @@ padding: 0 5px 0 0;
         cursor: pointer;
 
     }
-
+    .footer {
+        display: none;
+    }
     .right{
         margin: 0;
     }
