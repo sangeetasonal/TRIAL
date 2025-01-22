@@ -58,7 +58,8 @@ for (let index =0; index < as.length; index++){
 }
 
 const playMusic = (track, pause = false) => {
-    currentSong.src = `/${currFolder}/` + track
+    currentSong.src = `${window.location.origin}/${currFolder}/` + track;
+
     if (!pause) {
         currentSong.play()
         play.src = "img/pause.svg"
@@ -84,7 +85,8 @@ async function displayAlbums(){
             let folder = e.href.split("/").slice(-1)[0]
 
            //get the metadata of the folder
-           let a = await fetch(`/songs/${folder}/info.json`)
+           let a = await fetch(`${window.location.origin}/songs/${folder}/info.json`);
+
            let response = await a.json();
            console.log(response)
            cardContainer.innerHTML = cardContainer.innerHTML + `<div data-folder="${folder}" class="card">

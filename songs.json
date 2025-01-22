@@ -1,0 +1,96 @@
+{
+  "calming": {
+    "title": "Calming",
+    "description": "Songs that calm you",
+    "cover": "calming/cover.jpg",
+    "songs": [
+      { "file": "calming/Dua Saware.mp3", "title": "Dua Saware" },
+      { "file": "calming/PEHLE_BHI_MAIN_.mp3", "title": "Pehle Bhi Main" }
+    ]
+  },
+  "big on the internet": {
+    "title": "Big on the Internet",
+    "description": "Trendsss",
+    "cover": "big on the internet/cover.jpg",
+    "songs": [
+      { "file": "big on the internet/Hurts So Good.mp3", "title": "Hurts So Good" }
+    ]
+  },
+  "chill vibes": {
+    "title": "Chill Vibes",
+    "description": "Chillllllll",
+    "cover": "chill vibes/cover.jpg",
+    "songs": [
+      { "file": "chill vibes/Arcade.mp3", "title": "Arcade" }
+    ]
+  },
+  "chillhope": {
+    "title": "Chill Hope",
+    "description": "Lost in lofi",
+    "cover": "chillhope/cover.jpg",
+    "songs": [
+      { "file": "chillhope/i m yours.mp3", "title": "I'm Yours" }
+    ]
+  },
+  "Daydreamer": {
+    "title": "Daydreamer",
+    "description": "Instrumental beats for a restful night's sleep.",
+    "cover": "Daydreamer/cover.jpg",
+    "songs": [
+      { "file": "Daydreamer/- SNAP -.mp3", "title": "SNAP" },
+      { "file": "Daydreamer/Calm Down.mp3", "title": "Calm Down" }
+    ]
+  },
+  "lofi beats": {
+    "title": "Lofi Beats",
+    "description": "By Spotify",
+    "cover": "lofi beats/cover.jpg",
+    "songs": [
+      { "file": "lofi beats/Dzanum.mp3", "title": "Dzanum" },
+      { "file": "lofi beats/Husn.mp3", "title": "Husn" },
+      { "file": "lofi beats/Love-Story.mp3", "title": "Love Story" },
+      { "file": "lofi beats/Pal Behta Jaaye.mp3", "title": "Pal Behta Jaaye" }
+    ]
+  },
+  "lofi meditation": {
+    "title": "Lofi Meditation",
+    "description": "Easy Meditation",
+    "cover": "lofi meditation/cover.jpg",
+    "songs": [
+      { "file": "lofi meditation/Ek Ajnabee Haseena.mp3", "title": "Ek Ajnabee Haseena" },
+      { "file": "lofi meditation/Madhubala.mp3", "title": "Madhubala" }
+    ]
+  },
+  "lofi sleep": {
+    "title": "Lofi Sleep",
+    "description": "Drift away with enthralling instrumentals.",
+    "cover": "lofi sleep/cover.jpg",
+    "songs": [
+      { "file": "lofi sleep/Dandelions.mp3", "title": "Dandelions" }
+    ]
+  },
+  "mega hit": {
+    "title": "Mega Hits",
+    "description": "Mix",
+    "cover": "mega hit/cover.jpg",
+    "songs": [
+      { "file": "mega hit/Tu_Hai_Kahan_x_Laree_Choote.mp3", "title": "Tu Hai Kahan x Laree Choote" }
+    ]
+  },
+  "my life is a movie": {
+    "title": "My Life is a Movie",
+    "description": "Songs for you",
+    "cover": "my life is a movie/cover.jpg",
+    "songs": [
+      { "file": "my life is a movie/Elevated.mp3", "title": "Elevated" }
+    ]
+  },
+  "web series hits": {
+    "title": "Web Series Hits",
+    "description": "Web Hits",
+    "cover": "web series hits/cover.jpg",
+    "songs": [
+      { "file": "web series hits/Aise-Kyun.mp3", "title": "Aise Kyun" }
+    ]
+  }
+}
