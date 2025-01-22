@@ -58,7 +58,7 @@ for (let index =0; index < as.length; index++){
 }
 
 const playMusic = (track, pause = false) => {
-    currentSong.src = `${window.location.origin}/${currFolder}/` + track;
+    currentSong.src = `songs/${currFolder}/` + track;
 
     if (!pause) {
         currentSong.play()
@@ -86,7 +86,7 @@ async function displayAlbums(){
             let folder = e.href.split("/").slice(-1)[0]
 
            //get the metadata of the folder
-           let a = await fetch(`./songs/${folder}/info.json`); // Relative path
+           let a = await fetch(`songs/${folder}/info.json`);
 
            let response = await a.json();
            console.log(response)
@@ -100,7 +100,7 @@ async function displayAlbums(){
 
 
            </div> 
-            <img src="/songs/${folder}/cover.jpg" alt="">
+            <img src="songs/${folder}/cover.jpg" alt="">
             <h2>${response.title}</h2>
             <p>${response.description}</p>
           
@@ -129,8 +129,8 @@ async function main(){
    
 
     // //get the list of all the songs
-     songs = await getSongs("songs/calming")
-     playMusic(songs[0], true)
+    songs = await getSongs("songs/calming");
+
   
          
  //display all the album on the page  
