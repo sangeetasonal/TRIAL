@@ -71,7 +71,7 @@ const playMusic = (track, pause = false) => {
 }
 
 async function displayAlbums(){
-    let a = await fetch(`./songs/`); // Relative path
+    let a = await fetch(`songs/`); // Relative path
 
      let response = await a.text();
     let div = document.createElement("div")
